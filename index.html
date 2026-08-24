@@ -4,137 +4,274 @@
     <meta charset="utf-8">
     <title>Prakhar Verma</title>
     <meta name="author" content="Prakhar Verma">
+    <meta name="description" content="Machine learning researcher specializing in probabilistic modeling, Bayesian inference, and large language models.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
+      (function () {
+        var saved = null;
+        try { saved = localStorage.getItem('theme'); } catch (e) {}
+        document.documentElement.dataset.theme = saved || 'light';
+      })();
+    </script>
   </head>
-  <body style="padding-top:2%;" class="container">
-    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-      <h1 style="text-align:center">Prakhar Verma</h1>
-    </div>
-    <!--  -->
-    <div class="container" style="padding:2%">
-      <div class="row">
-        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 center">
-          <p style="text-align: justify; width: 100%;">
-            I am a machine learning researcher specializing in probabilistic modeling, Bayesian inference, and large language models.
-            I am currently a Senior Machine Learning Engineer at <a href="https://inven.ai" target="_blank">Inven</a>
-            and a Ph.D. researcher at Aalto University, advised by
-            <a href="https://users.aalto.fi/~asolin/" target="_blank">Prof. Arno Solin</a>. My doctoral dissertation has
-            been completed and successfully pre-examined, and is pending public defense in June 2026.
-          </p>
-          <p style="text-align: justify; width: 100%;">
-            My research spans industry and academia through roles at <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>, <a href="https://research.adobe.com/" target="_blank">Adobe Research</a>, and the
-            <a href="https://www.cs.ox.ac.uk/" target="_blank">University of Oxford</a>. I work on uncertainty-aware reasoning, sequential decision-making, and scalable inference methods
-            for language models and probabilistic systems  with applications to retrieval, entity understanding, and reasoning over noisy real-world data. Recent work includes efficient test-time planning for retrieval-augmented
-            generation (RAG) and Bayesian causal discovery with language model priors.
-          </p>
-          <p style="text-align:center">
-            <a href="mailto:prakhar.verma7@gmail.com" target="_blank">Email</a> &nbsp/&nbsp
-            <a href="data/Resume_PrakharVerma.pdf" target="_blank">CV</a> &nbsp/&nbsp
-            <a href="https://scholar.google.com/citations?user=I9Hu4LsAAAAJ&hl=en" target="_blank">Google Scholar</a> &nbsp/&nbsp
-            <a href="https://www.linkedin.com/in/vermaprakhar/" target="_blank"> LinkedIn </a>
-          </p>
-        </div>
-        <!-- picture -->
-        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 text-center order-first order-lg-last order-md-first order-sm-first"
-        style="padding: 0% 2% 2% 2%;">
-          <a href="images/PrakharVerma.png">
-            <img class="img-fluid w-75" alt="profile photo" src="images/PrakharVerma_circle.png">
-          </a>
+  <body>
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#" id="nav-brand">Prakhar Verma</a>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#news">News</a>
+            <a href="#publications">Publications</a>
+            <a href="#theses">Theses</a>
+            <a href="data/Resume_PrakharVerma.pdf" target="_blank" rel="noopener">CV</a>
+          </div>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
         </div>
       </div>
-      <!--  -->
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-          <h4>News</h4>
-          <ul>
-            <li> <b>[April 2026]</b> <u>Prakhar Verma</u>, David Arbour, Sunav Choudhary, Harshita Chopra, Arno Solin, Atanu R. Sinha.
-              <i>Sequential Causal Discovery with Noisy Language Model Priors</i> accepted in Transactions on Machine Learning Research (TMLR). <a href="https://arxiv.org/abs/2506.16234" target="_blank">Link</a>
-            <li> <b>[October 2025]</b> Started as a Senior Machine Learning Engineer at <a href="https://www.inven.ai/" target="_blank">Inven</a>.
-            <li><b>[August 2025]</b> I will be a workflow chair for <a href="https://virtual.aistats.org/Conferences/2026" target="_blank">AISTATS 2026</a> with <a href="https://yjchoe.github.io/" target="_blank">Yo Joong Choe</a> and Program Chairs <a href="https://www.stat.cmu.edu/~aramdas/" target="_blank">Aaditya Ramdas</a> and <a href="https://users.aalto.fi/~asolin/" target="_blank">Arno Solin</a>.</li>
-            <li> <b>[March 2025]</b> <u>Prakhar Verma</u>, Sukruta Prakash Midigeshi, Gaurav Sinha, Arno Solin, Nagarajan Natarajan, Amit Sharma.
-              <i>Plan*RAG: Efficient Test-Time Planning for Retrieval Augmented Generation</i> accepted in Workshop on Reasoning and Planning for Large Language Models at ICLR 2025. <a href="https://openreview.net/forum?id=gi9aqlYdBk" target="_blank">Link</a>
-            <li> <b>[September 2024]</b> Completed a 3 months Research Internship at <a href="https://research.adobe.com/" target="_blank">Adobe Research</a>.
-            <li> <b>[June 2024]</b> Completed a 3 months Research Internship at <a href="https://www.microsoft.com/en-us/research/" target="_blank">Microsoft Research</a>.
-            <li> <b>[January 2024]</b> <u>Prakhar Verma</u>, Vincent Adam, Arno Solin.
-              <i>Variational Gaussian Process Diffusion Processes</i> accepted in the Proceedings of the International Conference on
-              Artificial Intelligence and Statistics (AISTATS) 2024. <a href="https://arxiv.org/abs/2306.02066" target="_blank">Link</a>
-            </li>
-            <li> <b>[October 2023]</b> Elizaveta Semenova, <u>Prakhar Verma</u>, Max Cairney-Leeming, Arno Solin, Samir Bhatt, Seth Flaxman.
-              <i>PriorCVAE: Scalable MCMC parameter inference with Bayesian deep generative modelling</i> <a href="https://arxiv.org/abs/2304.04307" target="_blank">Link</a>
-            </li>
-            <li> <b>[September 2023]</b> Completed a 3 months research visit at <a href="https://www.ox.ac.uk/" target="_blank">University of Oxford</a>.
-            </li>
-            <li> <b>[May 2023]</b> Paul E. Chang<sup>*</sup>, <u>Prakhar Verma</u><sup>*</sup>,
-              ST John, Arno Solin, Mohammad Emtiyaz Khan.
-              <i>Memory-based dual Gaussian processes for sequential learning</i> accepted in
-              International Conference on Machine Learning (ICML), 2023 (Oral Presentation). <a href="https://arxiv.org/abs/2306.03566" target="_blank">Link</a>
-            </li>
-            <!-- <li> <b>[March 2023]</b> <u> Prakhar Verma</u>, Vincent Adam, Arno Solin.
-              <i>Gaussian Variational Inference for Diffusion Processes Revisited</i> accepted as a poster in "BayesComp" 2023.
-              <a href="data/bayescomp_2023_poster.pdf" target="_blank">Poster</a>
-            </li> -->
-            <!-- <li><b>[November 2022</b>] <u>Prakhar Verma</u>, Paul E. Chang, Arno Solin, Mohammad Emtiyaz Khan.
-              <i>Sequential Learning in GPs with Memory and Bayesian Leverage Score</i>
-              accepted in Asian Conference in Machine Learning (ACML) workshop
-              "Continual Lifelong Learning" 2022 (Contributed talk).
-              <a href="https://openreview.net/pdf?id=_RvQKPW8ZCp" target="_blank">Link</a> &nbsp
-              <a href="data/acml2022_contributed_talk.pdf" target="_blank">Slide</a>
-            </li> -->
-            <!-- <li><b>[October 2022</b>] Paul E. Chang, <u>Prakhar Verma</u>, ST John, Victor Picheny,
-              Henry Moss, Arno Solin. <i>Fantasizing with Dual GPs in Bayesian Optimization and Active Learning</i>
-              accepted in NeurIPS workshop "Gaussian Processes, Spatiotemporal Modeling, and Decision-making Systems" 2022.
-              <a href="https://arxiv.org/abs/2211.01053" target="_blank">Link</a> &nbsp
-              <a href="https://gp-seminar-series.github.io/neurips-2022/assets/camera_ready/11_poster.pdf" target="_blank">Poster</a>
-            </li> -->
-            <!-- <li>[<i>August 2022</i>] Started as a <i>Doctoral Researcher</i> with <a href="https://users.aalto.fi/~asolin/" target="_blank">Prof. Arno Solin</a> at Aalto University, Finland.</li>
-            <li>[<i>October 2021</i>] <u>Prakhar Verma</u>, Vincent Adam, Arno Solin. <i>Sparse Gaussian Processes for Stochastic Differential Equations</i>
-              accepted in NeurIPS workshop "The Symbiosis of Deep Learning and Differential Equations" 2021.
-              <a href="https://openreview.net/forum?id=yk3ghzrAVnp" target="_blank">Link</a> &nbsp
-              <a href="data/poster_sparse_sde.pdf" target="_blank">Poster</a>
-            </li>
-            <li>[<i>October 2021</i>] Arno Solin, Ella Tamir, <u>Prakhar Verma</u>. <i>Scalable Inference in SDEs by Direct Matching of
-              the Fokker–Planck–Kolmogorov Equation</i> accepted in NeurIPS 2021.
-              <a href="https://arxiv.org/abs/2110.15739" target="_blank">Link</a>&nbsp
-              <a href="data/poster_scalable_sde.pdf" target="_blank">Poster</a>
-            </li> -->
-            <!-- <li>[<i>September 2021</i>] Started working as a consultant with <a href="https://www.spectacularai.com/" target="_blank">
-              SpectacularAI</a> researching uncertainty quantification.</li> -->
-            <!-- <li>[<i>July 2021</i>] Successfully submitted M.Sc. thesis titled <i>"Sparse Gaussian processes for stochastic differential equations"
-              under <a href="https://vincentadam87.github.io/" target="_blank">Dr Vincent Adam</a> and <a href="https://users.aalto.fi/~asolin/" target="_blank">Prof. Arno Solin</a>.</i></li> -->
-            <!-- <li>[<i>February 2021</i>] Started M.Sc. thesis </li> -->
-            <!-- <li>[<i>April 2020</i>] Joined <a href="https://users.aalto.fi/~asolin/group/" target="_blank">Aalto ML</a> group as a Research Assistant</li> -->
-            <!-- <li>[<i>February 2020</i>] <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11433/114332Z/MAGEC-machine-assisted-geometry-extraction-and-creation/10.1117/12.2559438.short?SSO=1" target="_blank">M.A.G.E.C : machine assisted geometry extraction and creation</a> published in SPIE Digital Library.</li> -->
-            <!-- <li>[<i>January 2020</i>] Teaching Assistant for <a href="https://mycourses.aalto.fi/course/view.php?id=20606" target="_blank">CS-E4890: Deep Learning</a></li> -->
-            <!-- <li>[<i>November 2019</i>] M.A.G.E.C presented in Oral session at <a href="http://www.icmv.org/Amsterdam%20Program.pdf#page=31" target="_blank">ICMV 2019</a></li>
-            <li>[<i>2018</i>] Awarded Face of TomTom 2018.</li>
-            <li>[<i>December 2018</i>] Mentor in <a href="https://www.techgig.com/hackathon/tomtom" target="_blank">TomTom External Hackathon</a></li>
-            <li>[<i>April 2018</i>] Speaker at <a href="https://www.meetup.com/Pune-GDG/events/249975930/" target="_blank">Google Tensorflow meetup</a></li>
-            <li>[<i>January 2018</i>] Speaker at <a href="https://geospatialworldforum.org/2018/speakers-bio.asp?id=gwf2018A401" target="_blank">GeoSpatial WorldForum 2018</a></li> -->
-          </ul>
-      </div>
-    </div>
-    <!--  -->
-    <div class="row col-lg-12 col-md-12 col-xs-12 col-sm-12">
-      <h4>Theses</h4>
-      <p>
-          <u>Prakhar Verma</u> (2026). <b><i>Scalable Probabilistic Inference for Sequential Stochastic Models</i></b>. Doctoral dissertation. Aalto University.
-          <a href="#" target="_blank">PDF</a>
-      </p>
-      <p>
-          <u>Prakhar Verma</u> (2021). <b><i>Sparse Gaussian processes for stochastic differential equations</i></b>. Master’s thesis. Aalto University.
-          <a href="data/SCI_2021_Verma_Prakhar_v0.1.pdf" target="_blank">PDF</a>
-      </p>
-      <p>
-          <u>Prakhar Verma</u> (2016). <b><i>Development of automated GIS Tools on various platforms</i></b>. Bachelor's thesis.
-          Uttarakhand Technical University, TomTom India.
-          <a href="data/BachelorThesis_PrakharVerma.pdf" target="_blank">PDF</a>
-      </p>
-    </div>
-    </div>
-    <footer class="footer text-center" style="margin-top:2%">
-      <em>Last updated: May 10, 2026 at 17:00 EEST.</em>
-    </footer>
+    </nav>
+
+    <main class="container">
+      <!-- ========== About ========== -->
+      <section id="about" class="section hero">
+        <aside class="hero-side">
+          <div class="hero-photo">
+            <a href="images/PrakharVerma.png">
+              <img alt="Prakhar Verma" src="images/PrakharVerma_circle.png">
+            </a>
+          </div>
+          <h1 class="hero-name">Prakhar Verma</h1>
+          <p class="hero-subtitle">Senior ML Engineer @ Inven<br>Ph.D., Aalto University</p>
+          <div class="social compact">
+            <a href="mailto:prakhar.verma7@gmail.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span class="label">Email</span>
+            </a>
+            <a href="data/Resume_PrakharVerma.pdf" target="_blank" rel="noopener" aria-label="CV" title="CV">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span class="label">CV</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=I9Hu4LsAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <span class="label">Scholar</span>
+            </a>
+            <a href="https://www.linkedin.com/in/vermaprakhar/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+              <span class="label">LinkedIn</span>
+            </a>
+            <a href="https://github.com/prakharverma" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37a3.05 3.05 0 0 0-1.28-1.68c-1.04-.71.08-.7.08-.7a2.41 2.41 0 0 1 1.76 1.18 2.44 2.44 0 0 0 3.34.95 2.45 2.45 0 0 1 .73-1.53c-2.55-.29-5.24-1.28-5.24-5.68a4.45 4.45 0 0 1 1.19-3.09 4.13 4.13 0 0 1 .11-3.05s.97-.31 3.18 1.18a10.9 10.9 0 0 1 5.79 0c2.21-1.49 3.18-1.18 3.18-1.18a4.13 4.13 0 0 1 .11 3.05 4.45 4.45 0 0 1 1.19 3.09c0 4.41-2.69 5.38-5.25 5.67a2.75 2.75 0 0 1 .78 2.13v3.16c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+              <span class="label">GitHub</span>
+            </a>
+          </div>
+        </aside>
+        <div class="hero-main">
+          <p>
+            I am a Senior Machine Learning Engineer at <a href="https://inven.ai" target="_blank" rel="noopener">Inven</a>, where I build reliable, production-scale LLM systems.
+            My work focuses on grounding language models in private, multimodal data, building scalable data pipelines for AI systems, and applying probabilistic machine learning for well-calibrated forecasting and estimation.
+          </p>
+          <p>
+            I completed my Ph.D. at Aalto University, Finland, under the supervision of
+            <a href="https://users.aalto.fi/~asolin/" target="_blank" rel="noopener">Prof. Arno Solin</a>.
+            My experience spans both industry and academia through research roles at
+            <a href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener">Microsoft Research</a>,
+            <a href="https://research.adobe.com/" target="_blank" rel="noopener">Adobe Research</a>, and the
+            <a href="https://www.cs.ox.ac.uk/" target="_blank" rel="noopener">University of Oxford</a>,
+            with publications at ICML (Oral), NeurIPS, AISTATS, and TMLR.
+            </p>
+          <p>
+            I am particularly interested in the intersection of probabilistic modeling and agentic systems,
+            with the goal of developing principled, uncertainty-aware agent frameworks grounded in Bayesian principles for evaluation, failure detection and recovery, and decision-making under uncertainty.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== News ========== -->
+      <section id="news" class="section">
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">Aug 2026</span>
+            <span class="news-item"> Defended my Ph.D. dissertation <i><a href="https://aaltodoc.aalto.fi/items/b495e811-1def-4a77-869b-35eb132228ea" target="_blank" rel="noopener">Scalable Probabilistic Inference for Sequential Stochastic Models</a></i> at Aalto University, Finland advised by <a href="https://users.aalto.fi/~asolin/" target="_blank" rel="noopener">Prof. Arno Solin</a> and examined by <a href="https://frellsen.org/" target="_blank" rel="noopener">Prof. Jes Frellsen</a> (DTU).</span>
+          </li>
+          <li>
+            <span class="news-date">Apr 2026</span>
+            <span class="news-item"><u>Prakhar Verma</u>, David Arbour, Sunav Choudhary, Harshita Chopra, Arno Solin, Atanu R. Sinha. <i><a href="https://openreview.net/forum?id=wFs71JzEO7" target="_blank" rel="noopener">Sequential Causal Discovery with Noisy Language Model Priors</a></i> accepted in Transactions on Machine Learning Research (TMLR).</span>
+          </li>
+          <li>
+            <span class="news-date">Oct 2025</span>
+            <span class="news-item">Started as a Senior Machine Learning Engineer at <a href="https://www.inven.ai/" target="_blank" rel="noopener">Inven</a>.</span>
+          </li>
+          <li>
+            <span class="news-date">Aug 2025</span>
+            <span class="news-item">I will be a workflow chair for <a href="https://virtual.aistats.org/Conferences/2026" target="_blank" rel="noopener">AISTATS 2026</a> with <a href="https://yjchoe.github.io/" target="_blank" rel="noopener">Yo Joong Choe</a> and Program Chairs <a href="https://www.stat.cmu.edu/~aramdas/" target="_blank" rel="noopener">Aaditya Ramdas</a> and <a href="https://users.aalto.fi/~asolin/" target="_blank" rel="noopener">Arno Solin</a>.</span>
+          </li>
+          <li>
+            <span class="news-date">Mar 2025</span>
+            <span class="news-item"><u>Prakhar Verma</u>, Sukruta Prakash Midigeshi, Gaurav Sinha, Arno Solin, Nagarajan Natarajan, Amit Sharma. <i><a href="https://openreview.net/forum?id=gi9aqlYdBk" target="_blank" rel="noopener">Plan*RAG: Efficient Test-Time Planning for Retrieval Augmented Generation</a></i> accepted in Workshop on Reasoning and Planning for Large Language Models at ICLR 2025.</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ========== Publications ========== -->
+      <section id="publications" class="section">
+        <h2>Selected Publications</h2>
+        <p class="pub-more">
+          See full list on <a href="https://scholar.google.com/citations?user=I9Hu4LsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.
+        </p>
+        <div class="pub-list">
+          <article class="pub">
+            <a class="pub-thumb-link" href="https://openreview.net/forum?id=wFs71JzEO7" target="_blank" rel="noopener">
+              <img class="pub-thumb pub-thumb--img" src="images/pubs/seq_causal.png" alt="Sequential Causal Discovery paper thumbnail" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://openreview.net/forum?id=wFs71JzEO7" target="_blank" rel="noopener">Sequential Causal Discovery with Noisy Language Model Priors</a></h3>
+              <p class="pub-authors"><u>Prakhar Verma</u>, David Arbour, Sunav Choudhary, Harshita Chopra, Arno Solin, Atanu R. Sinha</p>
+              <p class="pub-venue">Transactions on Machine Learning Research (TMLR), 2026</p>
+              <p class="pub-links">
+                <a href="https://openreview.net/forum?id=wFs71JzEO7" target="_blank" rel="noopener">OpenReview</a>
+                <a href="https://arxiv.org/abs/2506.16234" target="_blank" rel="noopener">arXiv</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb-link" href="https://openreview.net/forum?id=gi9aqlYdBk" target="_blank" rel="noopener">
+              <img class="pub-thumb pub-thumb--img" src="images/pubs/plan_rag.png" alt="Plan*RAG paper thumbnail" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://openreview.net/forum?id=gi9aqlYdBk" target="_blank" rel="noopener">Plan*RAG: Efficient Test-Time Planning for Retrieval Augmented Generation</a></h3>
+              <p class="pub-authors"><u>Prakhar Verma</u>, Sukruta Prakash Midigeshi, Gaurav Sinha, Arno Solin, Nagarajan Natarajan, Amit Sharma</p>
+              <p class="pub-venue">Workshop on Reasoning and Planning for Large Language Models, ICLR 2025</p>
+              <p class="pub-links">
+                <a href="https://openreview.net/forum?id=gi9aqlYdBk" target="_blank" rel="noopener">OpenReview</a>
+                <a href="https://arxiv.org/abs/2410.20753" target="_blank" rel="noopener">arXiv</a>
+                <a href="data/poster_plan_rag.pdf" target="_blank" rel="noopener">Poster</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb-link" href="https://proceedings.mlr.press/v238/verma24a.html" target="_blank" rel="noopener">
+              <img class="pub-thumb pub-thumb--img" src="images/pubs/var_gp.png" alt="Variational Gaussian Process Diffusion Processes paper thumbnail" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://proceedings.mlr.press/v238/verma24a.html" target="_blank" rel="noopener">Variational Gaussian Process Diffusion Processes</a></h3>
+              <p class="pub-authors"><u>Prakhar Verma</u>, Vincent Adam, Arno Solin</p>
+              <p class="pub-venue">International Conference on Artificial Intelligence and Statistics (AISTATS), 2024</p>
+              <p class="pub-links">
+                <a href="https://proceedings.mlr.press/v238/verma24a.html" target="_blank" rel="noopener">PMLR</a>
+                <a href="https://arxiv.org/abs/2306.02066" target="_blank" rel="noopener">arXiv</a>
+                <a href="https://github.com/AaltoML/vi-diffusion-processes" target="_blank" rel="noopener">Code</a>
+                <a href="data/poster_cvi_dp.pdf" target="_blank" rel="noopener">Poster</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb-link" href="https://proceedings.mlr.press/v202/chang23a.html" target="_blank" rel="noopener">
+              <img class="pub-thumb pub-thumb--img" src="images/pubs/dual_gp.png" alt="Memory-based Dual Gaussian Processes paper thumbnail" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://proceedings.mlr.press/v202/chang23a.html" target="_blank" rel="noopener">Memory-based Dual Gaussian Processes for Sequential Learning</a></h3>
+              <p class="pub-authors">Paul E. Chang<sup>*</sup>, <u>Prakhar Verma</u><sup>*</sup>, ST John, Arno Solin, Mohammad Emtiyaz Khan</p>
+              <p class="pub-venue">International Conference on Machine Learning (ICML), 2023 <span class="badge">Oral</span></p>
+              <p class="pub-links">
+                <a href="https://proceedings.mlr.press/v202/chang23a.html" target="_blank" rel="noopener">PMLR</a>
+                <a href="https://arxiv.org/abs/2306.03566" target="_blank" rel="noopener">arXiv</a>
+                <a href="https://github.com/AaltoML/sequential-gp" target="_blank" rel="noopener">Code</a>
+                <a href="data/poster_dual_gp.pdf" target="_blank" rel="noopener">Poster</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb-link" href="https://openreview.net/forum?id=_RvQKPW8ZCp" target="_blank" rel="noopener">
+              <img class="pub-thumb pub-thumb--img" src="images/pubs/seq_gp.png" alt="Sequential Learning in GPs paper thumbnail" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://openreview.net/forum?id=_RvQKPW8ZCp" target="_blank" rel="noopener">Sequential Learning in GPs with Memory and Bayesian Leverage Score</a></h3>
+              <p class="pub-authors"><u>Prakhar Verma</u>, Paul E. Chang, Arno Solin, Mohammad Emtiyaz Khan</p>
+              <p class="pub-venue">Continual Lifelong Learning Workshop, ACML 2022 <span class="badge">Contributed Talk</span></p>
+              <p class="pub-links">
+                <a href="https://openreview.net/forum?id=_RvQKPW8ZCp" target="_blank" rel="noopener">OpenReview</a>
+                <a href="https://github.com/AaltoML/sequential-gp" target="_blank" rel="noopener">Code</a>
+                <a href="data/acml2022_contributed_talk.pdf" target="_blank" rel="noopener">Slides</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="pub">
+            <a class="pub-thumb-link" href="https://openreview.net/forum?id=admg0sZZm1e" target="_blank" rel="noopener">
+              <img class="pub-thumb pub-thumb--img" src="images/pubs/sde_neurips.png" alt="Scalable Inference in SDEs paper thumbnail" loading="lazy">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://openreview.net/forum?id=admg0sZZm1e" target="_blank" rel="noopener">Scalable Inference in SDEs by Direct Matching of the Fokker&ndash;Planck&ndash;Kolmogorov Equation</a></h3>
+              <p class="pub-authors">Arno Solin, Ella Tamir, <u>Prakhar Verma</u></p>
+              <p class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS), 2021</p>
+              <p class="pub-links">
+                <a href="https://openreview.net/forum?id=admg0sZZm1e" target="_blank" rel="noopener">OpenReview</a>
+                <a href="https://arxiv.org/abs/2110.15739" target="_blank" rel="noopener">arXiv</a>
+                <a href="https://github.com/AaltoML/scalable-inference-in-sdes" target="_blank" rel="noopener">Code</a>
+                <a href="data/poster_scalable_sde.pdf" target="_blank" rel="noopener">Poster</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== Theses ========== -->
+      <section id="theses" class="section">
+        <h2>Theses</h2>
+        <p class="thesis">
+          <u>Prakhar Verma</u> (2026). <i><a href="https://aaltodoc.aalto.fi/items/b495e811-1def-4a77-869b-35eb132228ea" target="_blank" rel="noopener">Scalable Probabilistic Inference for Sequential Stochastic Models</a></i>. Doctoral dissertation, Department of Computer Science, Aalto University, Finland.
+        </p>
+        <p class="thesis">
+          <u>Prakhar Verma</u> (2021). <i><a href="data/SCI_2021_Verma_Prakhar_v0.1.pdf" target="_blank" rel="noopener">Sparse Gaussian Processes for Stochastic Differential Equations</a></i>. Master's thesis, Department of Computer Science, Aalto University, Finland.
+        </p>
+        <p class="thesis">
+          <u>Prakhar Verma</u> (2016). <i><a href="data/BachelorThesis_PrakharVerma.pdf" target="_blank" rel="noopener">Development of Automated GIS Tools on Various Platforms</a></i>. Bachelor's thesis. Uttarakhand Technical University, India. In collaboration with TomTom India.
+        </p>
+      </section>
+
+      <!-- ========== Academic Service ========== -->
+<!--      <section id="service" class="section">-->
+<!--        <h2>Academic Service</h2>-->
+<!--        <ul class="service-list">-->
+<!--          <li>Workflow Chair, International Conference on Artificial Intelligence and Statistics (AISTATS), 2026</li>-->
+<!--          <li>Reviewer &mdash; NeurIPS, ICLR, ICML, AISTATS, CoLLAs</li>-->
+<!--        </ul>-->
+<!--      </section>-->
+
+      <footer class="footer">
+        Last updated: <span id="last-updated">August 2026</span>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById('theme-toggle').addEventListener('click', function () {
+        var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+      document.getElementById('nav-brand').addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+      (function () {
+        var d = new Date(document.lastModified);
+        if (!isNaN(d.getTime())) {
+          document.getElementById('last-updated').textContent =
+            d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+        }
+      })();
+    </script>
   </body>
 </html>
